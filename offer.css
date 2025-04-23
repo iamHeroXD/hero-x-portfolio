@@ -1,0 +1,150 @@
+/* Offer Page Styles */
+
+body {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .offer-section {
+    padding: 60px 40px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .section-subtitle {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 40px;
+  }
+  
+  .offers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .offer-card {
+    background: #111;
+    border-radius: 16px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(255, 51, 153, 0.15);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #1f1f1f;
+  }
+  
+  .offer-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 30px rgba(255, 51, 153, 0.25);
+  }
+  
+  .offer-card h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .offer-card .price {
+    font-size: 20px;
+    color: #2ecc71;
+    margin-bottom: 20px;
+  }
+  
+  .offer-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  .offer-card ul li {
+    padding: 6px 0;
+    color: #ccc;
+    font-size: 14px;
+    border-bottom: 1px solid #222;
+  }
+  
+  .offer-card .btns {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .offer-card button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .add-to-cart {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #444;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #333;
+  }
+  
+  .buy-now {
+    background-color: #ff3399;
+    color: #fff;
+  }
+  
+  .buy-now:hover {
+    background-color: #ff4da6;
+  }
+  
+  /* Limited Pack Badge */
+  .limited {
+    border: 2px solid #ff3399;
+    position: relative;
+  }
+  
+  .limited-badge {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    background: #ff3399;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    animation: pulse 1.5s infinite;
+  }
+  
+  /* Custom Pack Color */
+  .offer-card.custom {
+    background: linear-gradient(135deg, #111 60%, #1a1a1a 100%);
+    border: 2px solid #555;
+  }
+  
+  /* Pulse Animation for Badge */
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0a0a0a;
+    color: #666;
+    font-size: 14px;
+    margin-top: 60px;
+  }
+  

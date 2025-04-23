@@ -1,0 +1,178 @@
+/* index.css */
+
+/* Hero Section Layout */
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  background-color: #0a0a0a;
+  color: white;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+  animation: fadeInLeft 1.2s ease-in-out;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.hero-text .highlight {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #cccccc;
+}
+
+/* Tagline Style (no typing) */
+.tagline {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ff9999;
+  animation: fadeSlideUp 1s ease-in-out;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: #16944a;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 10px #2ecc71;
+}
+
+.cta-button:hover {
+  background-color: #096c32;
+  transform: scale(1.05);
+}
+
+/* Hero Image */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInRight 1.2s ease-in-out;
+}
+
+.hero-photo {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid #2ecc71;
+  box-shadow: 0 0 20px #2ecc71;
+  transition: transform 0.4s ease;
+}
+
+.hero-photo:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #111111;
+  color: #ffffff;
+  font-size: 1.3rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.cta-link {
+  color: #2ecc71;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.cta-link:hover {
+  color: #2ecc71;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 25px 0;
+  background-color: #0a0a0a;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero-image {
+    max-width: 100%;
+  }
+
+  .hero-photo {
+    max-width: 250px;
+    margin-top: 30px;
+  }
+}

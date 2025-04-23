@@ -1,0 +1,52 @@
+.thankyou-section {
+    height: 100vh;
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .box {
+    text-align: center;
+    background: #111;
+    padding: 60px 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(255, 51, 153, 0.15);
+    border: 1px solid #1f1f1f;
+  }
+  
+  .box h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  
+  .box p {
+    color: #ccc;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .btn-home {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    background-color: #ff3399;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-home:hover {
+    background-color: #ff4da6;
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

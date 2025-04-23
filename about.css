@@ -1,0 +1,121 @@
+/* About Section Base */
+.about-section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #2ecc71;
+    margin: 10px auto 0;
+    border-radius: 10px;
+  }
+  
+  /* Intro Paragraph */
+  .intro {
+    font-size: 18px;
+    color: #ccc;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+  }
+  
+  .highlight {
+    color: #2ecc71;
+    font-weight: bold;
+  }
+  
+  /* Skills Section */
+  .skills {
+    background: #121212;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(230, 0, 92, 0.1);
+  }
+  
+  .skills h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .skills ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .skills ul li {
+    font-size: 16px;
+    color: #ddd;
+    padding: 8px 0;
+    border-bottom: 1px solid #1f1f1f;
+  }
+  
+  /* Experience Section */
+  .exp {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.04);
+  }
+  
+  .exp h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .exp p {
+    font-size: 16px;
+    color: #bbb;
+    line-height: 1.7;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 28px;
+    }
+  
+    .intro {
+      font-size: 16px;
+    }
+  
+    .skills h2,
+    .exp h2 {
+      font-size: 20px;
+    }
+  
+    .skills ul li,
+    .exp p {
+      font-size: 15px;
+    }
+  }
+  

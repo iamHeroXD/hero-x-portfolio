@@ -1,0 +1,100 @@
+/* Why Section Layout */
+.why-section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #2ecc71;
+    margin: 10px auto 0;
+    border-radius: 8px;
+  }
+  
+  /* Grid */
+  .reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  /* Card Style */
+  .reason-card {
+    background: #121212;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(255, 51, 153, 0.05);
+    border: 1px solid #1f1f1f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: cardFadeIn 0.6s forwards;
+  }
+  
+  .reason-card h2 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  
+  .reason-card p {
+    font-size: 15px;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+  /* Hover Animation */
+  .reason-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255, 51, 153, 0.2);
+  }
+  
+  /* Fade-In Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes cardFadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Delay Animation on Grid Cards */
+  .reasons-grid .reason-card:nth-child(1) { animation-delay: 0.1s; }
+  .reasons-grid .reason-card:nth-child(2) { animation-delay: 0.2s; }
+  .reasons-grid .reason-card:nth-child(3) { animation-delay: 0.3s; }
+  .reasons-grid .reason-card:nth-child(4) { animation-delay: 0.4s; }
+  .reasons-grid .reason-card:nth-child(5) { animation-delay: 0.5s; }
+  .reasons-grid .reason-card:nth-child(6) { animation-delay: 0.6s; }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .section-title {
+      font-size: 28px;
+    }
+  
+    .reason-card h2 {
+      font-size: 18px;
+    }
+  
+    .reason-card p {
+      font-size: 14px;
+    }
+  }
+  

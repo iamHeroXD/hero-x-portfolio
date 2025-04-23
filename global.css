@@ -1,0 +1,162 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  /* Scrollbar (Dark Mode) */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+  
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #121212;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 0 10px #000;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f2f2f2;
+    letter-spacing: 1px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffffff;
+  }
+  
+  .nav-links .btn-offer {
+    color: #fff;
+    background: #e6005c;
+    padding: 6px 14px;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+  }
+  
+  .nav-links .btn-offer:hover {
+    background: #ff3385;
+  }
+  
+  /* Discord Icon */
+  .discord-link img {
+    width: 28px;
+    height: 28px;
+    margin-left: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .discord-link img:hover {
+    transform: scale(1.15);
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #888;
+    background: #101010;
+    border-top: 1px solid #1f1f1f;
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    background: #1f1f1f;
+    color: #f2f2f2;
+    padding: 10px 18px;
+    border-radius: 30px;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #2d2d2d;
+    transform: scale(1.05);
+  }
+  
+  /* Utility */
+  .highlight {
+    color: #e6005c;
+    font-weight: bold;
+  }
+  
+  .cta-link {
+    color: #ff3399;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .cta-link:hover {
+    color: #ffffff;
+  }
+  
+  /* Animations */
+  .fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 15px 30px;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .discord-link img {
+      margin-left: 0;
+    }
+  }
+  
